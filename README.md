@@ -74,7 +74,7 @@ docker run -d \
 
 <br>
 
-4. Verify it’s Running
+5. Verify it’s Running
 ``` 
 docker logs -f rapidspike-probe
 ```
@@ -92,13 +92,15 @@ Expected output:
 
 <br>
 
-5. Monitor the result of your monitors from [RapidSpike dashboard](https://www.my.rapidspike.com)
+6. Monitor the result of your monitors from [RapidSpike dashboard](https://www.my.rapidspike.com)
 
 <br>
 
+---
+
 ### Deployment
 
-The Probe Agent can be deployed in multiple environments including:
+The Probe Agent can be deployed in multiple environments of your choice including:
 
 🐳 Docker / Kubernetes — for cloud workloads
 
