@@ -42,7 +42,7 @@ This image is built for **simplicity**, **observability**, and **resilience** â€
 3. Pull the Image
 
 ```
-docker pull rapidspike/probe-agent:latest 
+docker pull ghcr.io/rapidspike-oss/probe-agent:1.0.0
 
 ```
 
