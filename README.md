@@ -41,7 +41,7 @@ This image is built for **simplicity**, **observability**, and **resilience** â€
 
 3. Pull the Image
 
-```mermaid
+```
 docker pull rapidspike/probe-agent:latest 
 
 ```
