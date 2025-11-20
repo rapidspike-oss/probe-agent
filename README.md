@@ -32,17 +32,18 @@ This image is built for **simplicity**, **observability**, and **resilience** â€
 
 <br />
 
-2. Create Monitor and Generate API Key
+2. Create Monitor and Get Your Credentials
 - Register an account or Login into your existing [RapidSpike account](https://www.my.rapidspike.com) 
-- [Generate your API Key](https://www.my.rapidspike.com)
-- Set up your Probe Monitor from the dashboard
+- Set up your Probe Monitor from the dashboard - (Your account Admin access is required)
+- [Copy your Credentials](https://www.my.rapidspike.com) from the overview page of the Probe Monitor you created by clicking the view menu at the right end of the page.
+
 
 <br />
 
 3. Pull the Image
 
 ```
-docker pull ghcr.io/rapidspike-oss/probe-agent:1.0.0
+docker pull ghcr.io/rapidspike-oss/probe-agent:latest
 
 ```
 
@@ -57,7 +58,7 @@ docker run -d \
   --name rapidspike-probe \
   -e RS_AGENT_KEY="your-agent-api-key" \
   -e RS_CLIENT_ID="your-client-id" \
-  rapidspike/probe-agent:latest
+  ghcr.io/rapidspike-oss/probe-agent:latest
 
 ```
 To run the agent for specific probes, pass the probe Id separated by commas. Create monitors by signing into your account on RapidSpike dashboard.
@@ -68,7 +69,7 @@ docker run -d \
   -e RS_AGENT_KEY="your-agent-api-key" \
   -e RS_CLIENT_ID="your-client-id" \
   -e RS_PROBE_ID="probe-id-1,probe-id-2" \
-  rapidspike/probe-agent:latest
+  ghcr.io/rapidspike-oss/probe-agent:latest
 
 ```
 
